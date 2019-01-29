@@ -6,6 +6,6 @@ COPY package.json .
 RUN npm install
 
 # Don't need this anymore because we are using volumes
-#COPY . .
+COPY . .
 
 CMD ["npm", "run", "start"]
